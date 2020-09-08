@@ -1,0 +1,124 @@
+Plain Text Collaboration | Tester B Instructions
+
+=======================================================================
+
+PART I: DISJOINT EDITS
+
+Instructions: Follow the instructions located in the template. 
+
+=======================================================================
+
+PART II: INTEGRATED EDITS W/O CONFLICTS
+
+Instructions: In the template, there are 10 sets of 5 binary digits. 
+For each set, given the attributes of the set listed by Tester A, 
+your goal is to determine whether or not the set is a GOOD or BAD set.
+
+1. Wait for the list of attributes from Tester A. The possible 
+attributes are [red, blue, star, light]. The list should look something 
+like this: 
+
+    01001  => [red, blue, star] 
+
+2. Then using the following tables, determine whether or not the set 
+is GOOD or BAD. Once you have determined if the set is GOOD or BAD,
+replace the attribute list given with your answer.
+
+Syntax Notes:
+- sum(digits): sum of all digits in the set
+- digits[i]  : digit at ith index starting at 0; negative indexes are
+               counted from the back with the last digit index at -1
+- ternary    : (cond) ? (value if cond is true) : (value if cond is false)
+  operator 
+- boolean    : 0 is false, 1 is true
+
+  ____________________________________________________________________
+  --------------------------------------------------------------------
+           |          red          |         !red          |        
+  --------------------------------------------------------------------
+           |     G     |     L     |     L     |     B     |  star
+    blue   -----------------------------------------------------------
+           |     M     |     M     |     L     |     M     | !star
+  --------------------------------------------------------------------
+           |     C     |     L     |     C     |     C     |  star
+   !blue   -----------------------------------------------------------
+           |     C     |     M     |     L     |     G     | !star
+  --------------------------------------------------------------------
+           |   light   |  !light   |   light   |  !light   |
+  --------------------------------------------------------------------
+  ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+  ____________________________________________________________________
+  --------------------------------------------------------------------
+    code   |  return value       
+  --------------------------------------------------------------------
+      B    |  BAD
+  --------------------------------------------------------------------
+      G    |  GOOD
+  --------------------------------------------------------------------
+      C    |  (sum(digits) > 2) ? GOOD : BAD
+  --------------------------------------------------------------------
+      M    |  (sum(digits) % 2) ? GOOD : BAD
+  --------------------------------------------------------------------
+      L    |  (digits[-1]) ? GOOD : BAD
+  --------------------------------------------------------------------
+  ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+
+EXAMPLE: 01001  => [red, blue, star] 
+
+    1. This set has the red, blue, and star attribute. Looking at the 
+       the first table we see this correlates to code L. 
+    2. Since code L checks the last digit before returning a value, we
+       check digits[-1]==1 which evaluates to GOOD. We then replace the
+       attribute list with our answer.
+       
+       01001  => GOOD
+
+=======================================================================
+
+PART III: INTEGRATED EDITS WITH CONFLICTS
+
+Instructions: In there template, there are 3 sets of 5 words with 
+missing characters. Using the clues below, figure out the correct word 
+and write it next to the clue after the arrow. 
+*Note: If you can't figure out the word just write a random word. 
+
+SECTION A:
+
+1.  organ that pumps blood; symbol on a card; center of something
+
+2.  have sufficient funds; be able to pay for something; be able do 
+    something without serious consequence
+
+3.  ate something small; ate something in between meals
+
+4.  wrongly conceived; having made an error
+
+5.  pleasing, agreeable or enjoyable; socially acceptable
+
+
+SECTION B:
+
+6.  give lessons; what instructors at school do
+
+7.  physically muscular, powerful; especially competent or able
+
+8.  extravagant comfort; unnecessary material objects usually obtained
+    to display wealth; Prada and Gucci are ____ brands
+
+9.  ~26 mile run, race that needs training
+   
+10. subatomic particles with negative charge, opposite of a proton
+
+
+SECTION C: 
+
+11. the company you work for, to look up something online
+
+12. grouchy, ill-tempered; [delicious seafood] + "by"
+
+13. make clear; describe something for better understanding and clarity
+
+14. to talk informally with others; shoe brand famous for Chuck Taylor 
+    All Star sneakers; [criminal] + [song section]
+
+15. exciting quest or unusual experience

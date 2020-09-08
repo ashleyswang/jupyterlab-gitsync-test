@@ -1,0 +1,133 @@
+Plain Text Collaboration Test
+
+=======================================================================
+
+PART I: DISJOINT EDITS
+
+Purpose: In this section we test how edits show up when two users are 
+working on different parts of the same file. Edits from one user should
+not overlap into the other user's. 
+
+Expected Behavior: There should be no conflict error messages while
+working on this section. If there is, click on the "View Diff" option
+in the pop-up and note the conflict in the bug-bash spreadsheet. 
+(Providing a screenshot is preferable).
+
+Instructions*: Working with a partner fill in the following information 
+about both testers. Please designate who will be Tester A and who will
+be Tester B. In the "About Me" section, tell me something interesting 
+about yourself. This section should be 5-10 sentences long. 
+
+***** TESTER A *****
+Name: 
+LDAP: 
+
+About Me:
+
+********************
+
+***** TESTER B *****
+Name: 
+LDAP: 
+
+About Me: 
+
+********************
+
+=======================================================================
+
+PART II: INTEGRATED EDITS WITHOUT CONFLICTS
+
+Purpose: In this section we test how edits show up when two users are 
+working on the same part of the same file, but the changes do not 
+conflict. 
+
+Expected Behavior: There should be no conflict error messages while
+working on this section. If there is, click on the "View Diff" option
+in the pop-up and note the conflict in the bug-bash spreadsheet. 
+(Providing a screenshot is preferable).
+
+Instructions*: Below are 10 sets of 5 binary digits. Working with the 
+same partner, follow your individual set of instructions (A or B). 
+Tester A should communicate to Tester B by writing down the information 
+they get from instruction set A, and Tester B should be able to
+calculate the output using the information given by Tester A and using
+instruction set B.
+
+1.  00010  => 
+2.  10011  => 
+3.  11000  =>
+4.  00001  =>
+5.  01010  =>
+6.  11111  =>
+7.  00100  =>
+8.  10101  =>
+9.  00110  =>
+10. 00101  =>
+
+=======================================================================
+
+PART III: INTEGRATED EDITS WITH CONFLICTS
+
+Purpose: In this section we test how edits show up when two users are 
+working on the same file and the changes conflict. 
+
+Expected Behavior: There should be no other popups besides a Conflict
+Error pop-up. If other errors arise, please note the pop-up in the 
+bug-bash spreadsheet. (Providing a screenshot is preferable).
+
+Instructions*: Below are 3 sets of 5 words with missing characters. 
+Using the clues on your instruction set (A or B), figure out the 
+correct word and write it next to the clue. At the end of each section,
+wait for a Conflict Error to appear and choose the option in the 
+section title and ensure the editor contents are correct.
+
+SECTION A: VIEW DIFF AFTER CONFLICT
+Check for: 
+- Conflict markers  : ">>>>>>>> LOCAL", "========", "<<<<<<<< REMOTE"
+- Local/remote edits: ensure that both you and your partner's edits
+                      are shown in the diff
+
+1.  _ e a r _          => 
+
+2.  _ _ _ o r d        => 
+
+3.  _ _ a c k e _      => 
+
+4.  _ _ _ _ a k e _    => 
+
+5.  _ _ e a s _ _ _    => 
+
+
+SECTION B: USE LOCAL CHANGES
+Check for: 
+- Local edits: ensure that the content in the editor is the same as
+               the content before the pop-up
+
+6.  _ _ _ c h          => 
+
+7.  s t r _ _ _        => 
+
+8.  _ _ _ _ r y        => 
+
+9.  _ _ _ _ t _ o _    => 
+
+10. _ _ e c t _ _ _ _  => 
+
+
+SECTION C: USE REMOTE CHANGES
+Check for: 
+- Remote edits: ensure that the content in the editor contains
+                your partner's changes
+
+11. g _ _ _ l e        => 
+
+12. _ _ a b _ _        => 
+
+13. e x _ _ _ _ _      => 
+
+14. _ _ _ v e r s e    => 
+
+15. _ _ _ _ _ t u r e  => 
+
+

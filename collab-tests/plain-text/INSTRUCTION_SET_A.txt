@@ -1,0 +1,97 @@
+Plain Text Collaboration | Tester A Instructions
+
+=======================================================================
+
+PART I: DISJOINT EDITS
+
+Instructions: Follow the instructions located in the template. 
+
+=======================================================================
+
+PART II: INTEGRATED EDITS W/O CONFLICTS
+
+Instructions: In the template, there are 10 sets of 5 binary digits.
+For each set, your goal is to communicate whether or not each of the 
+attributes are true or false. The possible attributes are [red, blue, 
+star, light]. 
+
+1. To determine the placement of the attribute indicators, count the 
+number of 1's in the individual set or sum up the digits in the set. 
+Then the order of the attributes are as follows:
+
+    SUM            ATTRIBUTE ORDER
+    0              star   red    light  blue
+    1              red    star   blue   light
+    2              blue   star   red    light
+    3              star   light  red    blue
+    4              blue   red    light  star
+    5              light  star   blue   red
+
+2. Then using the first 4 binary digits, determine whether each
+corresponding attribute is true or false (0 indicates false and 1 
+indicates true). Communicate with your partner via the text editor 
+the attributes of the set. 
+
+EXAMPLE: 01001
+
+    1. There are two 1's in the set, so the order of attributes is 
+       [blue, star, red, light].
+    2. The first digit is 0, so the first attribute, blue, is false. The 
+       second digit is 1, so the second attribute, star, is true. Continue 
+       with the remaining attributes, so we know that this set only has 
+       the attribute [star].
+    3. In the working document, we list the attributes next to the set and 
+       let Tester B get the final answer. 
+       
+       01001  => [star] 
+       ** TESTER B DOES THE REST **
+
+=======================================================================
+
+PART III: INTEGRATED EDITS WITH CONFLICTS
+
+Instructions: In there template, there are 3 sets of 5 words with 
+missing characters. Using the clues below, figure out the correct word 
+and write it next to the clue after the arrow.
+*Note: If you can't figure out the word just write a random word. 
+
+SECTION A:
+
+1.  aquire a skill or knowledge; what students go to school for
+
+2.  keep an official log of something; musical track; fastest time
+
+3.  salty crunchy snack usually paired with cheese
+
+4.  sweet circular breakfast dish usually eaten with butter and syrup
+
+5.  cherish; what pirates hide; popular song by Bruno Mars
+
+
+SECTION B:
+
+6.  popular salad dressing; a large farm;
+
+7.  emphasize; pressure or tension (either emotionally or on an object)
+
+8.  1s and 0s; computer language; composed of two things
+
+9.  operation taking input variables to produce an output; part of 
+    program that is called; f(x); the purpose of something;
+   
+10. observer, onlooker; person watching sports
+
+
+SECTION C: 
+
+11. showing a soft and/or kind manner; not harsh or severe; caring
+
+12. steady, consistent; place where horses are kept
+
+13. very enthusiastic and eager; looking forward to something; 
+    "I'm so _____ for quarantine to end!"
+
+14. cosmos; totality of known or supposed objects and phenomena 
+    throughout space
+
+15. data _____ (object in programming); manner of organization; building
