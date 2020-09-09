@@ -2,7 +2,7 @@ Plain Text Collaboration Test
 
 =======================================================================
 
-PART I: DISJOINT EDITS
+PART I: EDITS WITHOUT CONFLICTS
 
 Purpose: In this section we test how edits show up when two users are 
 working on different parts of the same file. Edits from one user should
@@ -16,7 +16,9 @@ in the pop-up and note the conflict in the bug-bash spreadsheet.
 Instructions*: Working with a partner fill in the following information 
 about both testers. Please designate who will be Tester A and who will
 be Tester B. In the "About Me" section, tell me something interesting 
-about yourself. This section should be 5-10 sentences long. 
+about yourself. This section should be 5-10 sentences long. After 
+completing the task, take a note of about how long it took before changes
+from your partner were displayed onto the screen. 
 
 ***** TESTER A *****
 Name: 
@@ -24,6 +26,7 @@ LDAP:
 
 About Me:
 
+Approx. Time: 
 ********************
 
 ***** TESTER B *****
@@ -32,42 +35,12 @@ LDAP:
 
 About Me: 
 
+Approx. Time: 
 ********************
 
 =======================================================================
 
-PART II: INTEGRATED EDITS WITHOUT CONFLICTS
-
-Purpose: In this section we test how edits show up when two users are 
-working on the same part of the same file, but the changes do not 
-conflict. 
-
-Expected Behavior: There should be no conflict error messages while
-working on this section. If there is, click on the "View Diff" option
-in the pop-up and note the conflict in the bug-bash spreadsheet. 
-(Providing a screenshot is preferable).
-
-Instructions*: Below are 10 sets of 5 binary digits. Working with the 
-same partner, follow your individual set of instructions (A or B). 
-Tester A should communicate to Tester B by writing down the information 
-they get from instruction set A, and Tester B should be able to
-calculate the output using the information given by Tester A and using
-instruction set B.
-
-1.  00010  => 
-2.  10011  => 
-3.  11000  =>
-4.  00001  =>
-5.  01010  =>
-6.  11111  =>
-7.  00100  =>
-8.  10101  =>
-9.  00110  =>
-10. 00101  =>
-
-=======================================================================
-
-PART III: INTEGRATED EDITS WITH CONFLICTS
+PART II: EDITS WITH CONFLICTS
 
 Purpose: In this section we test how edits show up when two users are 
 working on the same file and the changes conflict. 
@@ -77,10 +50,10 @@ Error pop-up. If other errors arise, please note the pop-up in the
 bug-bash spreadsheet. (Providing a screenshot is preferable).
 
 Instructions*: Below are 3 sets of 5 words with missing characters. 
-Using the clues on your instruction set (A or B), figure out the 
-correct word and write it next to the clue. At the end of each section,
-wait for a Conflict Error to appear and choose the option in the 
-section title and ensure the editor contents are correct.
+Using the list of words located in your instruction set, figure out the 
+correct word that matches the format and write it next to the arrow. At 
+the end of each section, wait for a Conflict Error to appear and choose 
+the option in the section title and ensure the editor contents are correct.
 
 SECTION A: VIEW DIFF AFTER CONFLICT
 Check for: 
